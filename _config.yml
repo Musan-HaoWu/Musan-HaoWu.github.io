@@ -175,6 +175,9 @@ include: ["_pages", "_scripts"]
 exclude:
   - _posts/
   - _projects/
+  - _pages/blog.md
+  - _pages/book.md
+  - _pages/profiles.md
   - _pages/repositories.md
   - _includes/repository/
   - bin/
