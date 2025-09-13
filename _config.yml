@@ -177,6 +177,8 @@ exclude:
   - _pages/blog.md
   - _projects/
   - _pages/projects.md
+  - _includes/projects_horizontal.liquid
+  - _includes/projects.liquid
   - _pages/book.md
   - _pages/profiles.md
   - _pages/repositories.md
