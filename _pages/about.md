@@ -2,16 +2,14 @@
 layout: about
 title: about
 permalink: /
-subtitle: Email: wuhao at ios dot ac dot cn
+subtitle: KLSS, Institute of Software, (University of) Chinese Academy of Science
 
 profile:
   align: right
   image: prof_pic1.jpg
   image_circular: false # crops the image to make it circular
   more_info: >
-    <p>KLSS, Institute of Software</p>
-    <p>(University of) Chinese Academy of Science</p>
-    <p>Beijing, China</p>
+    <p>Email: wuhao(at)ios.ac.cn</p>
 
 selected_papers: true # includes a list of papers marked as "selected={true}"
 social: true # includes social icons at the bottom of the page
