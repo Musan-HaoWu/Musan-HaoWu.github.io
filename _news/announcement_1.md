@@ -1,8 +1,8 @@
 ---
 layout: post
-date: 2015-10-22 15:59:00-0400
+date: 2025-9-17 15:59:00-0400
 inline: true
 related_posts: false
 ---
 
-I am looking for a postdoctoral position.
+I am about to graduate next year and am now looking for a postdoctoral position.
