@@ -23,8 +23,8 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/cv/";
           },
-        },{id: "news-i-am-looking-for-a-postdoctoral-position",
-          title: 'I am looking for a postdoctoral position.',
+        },{id: "news-i-am-about-to-graduate-next-year-and-am-now-looking-for-a-postdoctoral-position",
+          title: 'I am about to graduate next year and am now looking for a...',
           description: "",
           section: "News",},{
         id: 'social-email',
