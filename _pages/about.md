@@ -26,7 +26,7 @@ My name is Hao Wu. You can call me Hao (pronounced as "how") or by my English na
 
 I am currently a final-year Ph.D. student at the [Institute of Software](http://english.is.cas.cn/), [University of Chinese Academy of Sciences (UCAS)](https://english.ucas.ac.cn/), where I am fortunate to be supervised by [Prof. Naijun Zhan](https://lcs.ios.ac.cn/~znj/). I also completed my undergraduate studies in computer science at UCAS.
 
-My research interests lie in twofolds:
+My research interests lie in two main areas:
 - *Verification and Synthesis*. My goal is to create an extensible framework that combines symbolic and numerical/neural methods to tackle bottleneck problems in the verification and synthesis of complex systems, such as programs, continuous-time dynamical systems, control systems, stochastic systems, and multi-agent systems. 
 - *Theoretical Computer Science (TCS)*: I investigate foundational theoretical problems in logic, automata, algorithms, complexity, and computability to gain a deeper understanding of these core concepts.
 
