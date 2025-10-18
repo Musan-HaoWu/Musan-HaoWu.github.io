@@ -10,10 +10,9 @@ profile:
   image_circular: false # crops the image to make it circular
   more_info: >
     <p>Email: wuhao(at)ios.ac.cn</p>
-    <a href="https://orcid.org/my-orcid?orcid=0000-0001-9368-4744">ORCID</a>
-    <a href="https://scholar.google.com/citations?user=Bmr4jAIAAAAJ&hl=en">Google Scholar</a>
-    <a href="https://www.google.com" target="_blank">Search Google in a New Tab</a>
-    
+    <a href="https://orcid.org/my-orcid?orcid=0000-0001-9368-4744">[ORCID]</a>
+    <a href="https://scholar.google.com/citations?user=Bmr4jAIAAAAJ&hl=en">[Google Scholar]</a>
+
 selected_papers: false # includes a list of papers marked as "selected={true}"
 social: false # includes social icons at the bottom of the page
 
