@@ -1,8 +1,8 @@
 ---
 layout: about
-title: about
+title: Hao Wu (Formal Verification @IoS)
 permalink: /
-subtitle: KLSS, Institute of Software, (University of) Chinese Academy of Science
+subtitle: Institute of Software, (University of) Chinese Academy of Science
 
 profile:
   align: right
@@ -29,7 +29,7 @@ My name is Hao Wu. You can call me Hao (pronounced as "how") or by my English na
 I am currently a final-year Ph.D. student at the [Institute of Software](http://english.is.cas.cn/), [University of Chinese Academy of Sciences (UCAS)](https://english.ucas.ac.cn/), where I am fortunate to be supervised by [Prof. Naijun Zhan](https://lcs.ios.ac.cn/~znj/). I also completed my undergraduate studies in computer science at UCAS.
 
 My research interests lie in two main areas:
-- *Verification and Synthesis*. My goal is to advance extensible and scalable formal reasoning methodologies for verification and synthesis. I investigate a diverse range of systems exhibiting various computational behaviors, including discrete-time programs, continuous-time and hybrid dynamical systems, control systems, stochastic systems, and communication protocols.
-- *Theoretical Computer Science (TCS)*: I study foundational theoretical problems spanning logic, automata, algorithms, complexity, and computability, with the aim of deepening our understanding of these core concepts. Recently, I focus on nonlinear arithmetic reasoning.
+- **Formal Verification and Synthesis**. I study how to combine symbolic computation and numerical optimization in formal verification and synthesis, with the goal to advance extensible and scalable formal reasoning methodologies. I investigate a diverse range of infinite-state systems exhibiting various computational behaviors, including discrete-time programs, continuous-time and hybrid systems, control systems, stochastic systems, and communication protocols.
+- **Complexity/Computability Issues**. I have long been enthusiastic about topics in theoretical computer science, spanning logic, automata, and algorithms, with the aim of deepening our understanding of the complexity and computability issues. Recently I focus on reasoning about nonlinear arithmetic.
 
-In one sentence, I study the system of systems and the logic of logics.
+I also have a broad interest in many other topics in theoretical computer science (TCS). If you are interested in my work, please feel free to contact me.
