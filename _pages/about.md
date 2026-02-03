@@ -1,6 +1,6 @@
 ---
 layout: about
-title: Hao Wu (@IoS)
+title: Hao Wu 
 permalink: /
 subtitle: Institute of Software, (University of) Chinese Academy of Science
 
