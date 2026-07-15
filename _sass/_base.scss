@@ -297,6 +297,7 @@ ul.task-list input[type="checkbox"] {
 
   a {
     display: inline-flex;
+    gap: 0.38rem;
     align-items: center;
     min-height: 2.15rem;
     padding: 0.45rem 0.8rem;
@@ -309,12 +310,86 @@ ul.task-list input[type="checkbox"] {
     text-decoration: none;
     transition: border-color 150ms ease, color 150ms ease, transform 150ms ease;
 
+    .ai {
+      font-size: 1.05em;
+    }
+
     &:hover {
       border-color: var(--global-theme-color);
       color: var(--global-theme-color);
       text-decoration: none;
       transform: translateY(-1px);
     }
+  }
+}
+
+.about-pronunciation {
+  position: relative;
+  border-bottom: 1px dotted var(--global-text-color-light);
+  cursor: help;
+  outline: none;
+
+  &::after {
+    position: absolute;
+    z-index: 20;
+    bottom: calc(100% + 0.55rem);
+    left: 50%;
+    width: max-content;
+    max-width: min(20rem, 80vw);
+    padding: 0.5rem 0.7rem;
+    border-radius: 0.4rem;
+    color: var(--global-bg-color);
+    background: var(--global-text-color);
+    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.18);
+    content: attr(data-tooltip);
+    font-size: 0.76rem;
+    font-weight: 400;
+    line-height: 1.4;
+    opacity: 0;
+    pointer-events: none;
+    text-align: center;
+    transform: translate(-50%, 0.2rem);
+    transition: opacity 120ms ease, transform 120ms ease;
+  }
+
+  &:hover::after,
+  &:focus::after {
+    opacity: 1;
+    transform: translate(-50%, 0);
+  }
+
+  &:focus-visible {
+    border-bottom-color: var(--global-theme-color);
+  }
+}
+
+.trap-card {
+  max-width: 34rem;
+  margin: 2rem auto 0;
+  padding: clamp(1.5rem, 5vw, 2.5rem);
+  border: 1px solid var(--global-divider-color);
+  border-radius: 0.8rem;
+  background: var(--global-code-bg-color);
+  text-align: center;
+
+  .trap-card__message {
+    margin-bottom: 1.4rem;
+    font-size: 1.05rem;
+  }
+
+  .trap-card__count {
+    color: var(--global-text-color-light);
+    font-size: 0.85rem;
+
+    strong {
+      color: var(--global-text-color);
+    }
+  }
+
+  .trap-card__back {
+    display: inline-block;
+    margin-top: 0.8rem;
+    font-weight: 600;
   }
 }
 
