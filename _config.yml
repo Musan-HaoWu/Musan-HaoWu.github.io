@@ -275,8 +275,8 @@ terser:
 # -----------------------------------------------------------------------------
 
 scholar:
-  last_name: [Hao]
-  first_name: [Wu]
+  last_name: [Wu]
+  first_name: [Hao]
 
   style: apa
   locale: en

@@ -29,6 +29,7 @@
   --global-back-to-top-text-color: #{$white-color};
   --global-newsletter-bg-color: #{$white-color};
   --global-newsletter-text-color: #{$black-color};
+  --publication-title-color: #4f93c5;
 
   --global-tip-block: #42b983;
   --global-tip-block-bg: #e2f5ec;
@@ -100,6 +101,7 @@ html[data-theme="dark"] {
   --global-back-to-top-text-color: #{$black-color};
   --global-newsletter-bg-color: #{$grey-color-light};
   --global-newsletter-text-color: #{$grey-color-dark};
+  --publication-title-color: #7db7e8;
 
   --global-tip-block: #42b983;
   --global-tip-block-bg: #e2f5ec;

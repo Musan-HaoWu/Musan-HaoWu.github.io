@@ -234,12 +234,20 @@ ul.task-list input[type="checkbox"] {
     margin-bottom: 1.6rem;
   }
 
+  .about-hero-row {
+    display: flex;
+    gap: clamp(2rem, 6vw, 5rem);
+    align-items: flex-start;
+    justify-content: space-between;
+  }
+
   .post-title {
     display: flex;
     flex-wrap: wrap;
     gap: 0.45rem;
     align-items: baseline;
-    margin-bottom: 0.8rem;
+    flex: 1 1 auto;
+    margin-bottom: 0;
     font-size: clamp(2.7rem, 7vw, 4.25rem);
     letter-spacing: -0.045em;
     line-height: 1.05;
@@ -256,17 +264,26 @@ ul.task-list input[type="checkbox"] {
     letter-spacing: -0.01em;
   }
 
-  .post-header .desc {
-    max-width: 46rem;
-    margin: 0;
-    padding-left: 0.9rem;
-    border-left: 3px solid var(--global-theme-color);
-    color: var(--global-text-color-light);
-    font-size: 0.92rem;
-    line-height: 1.6;
+  .post-header .about-motto {
+    flex: 0 1 25rem;
+    max-width: 25rem;
+    margin: 0.15rem 0 0;
+    padding: 0;
+    border: 0;
+    color: var(--publication-title-color);
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: clamp(0.92rem, 1.5vw, 1.08rem);
+    line-height: 1.55;
+    text-align: right;
+
+    .about-motto-line {
+      display: block;
+      color: inherit;
+      white-space: nowrap;
+    }
 
     strong {
-      color: var(--global-text-color);
+      color: inherit;
       font-weight: 600;
     }
   }
@@ -395,8 +412,20 @@ ul.task-list input[type="checkbox"] {
 
 @media (max-width: 575px) {
   .about-page {
+    .about-hero-row {
+      flex-direction: column;
+      gap: 0.75rem;
+    }
+
     .post-title {
       font-size: clamp(2.45rem, 14vw, 3.25rem);
+    }
+
+    .post-header .about-motto {
+      flex-basis: auto;
+      align-self: stretch;
+      margin-top: 0;
+      text-align: left;
     }
 
     .profile .more-info {
@@ -1057,6 +1086,112 @@ footer.sticky-bottom {
     }
     div.award.hidden.open {
       border-color: var(--global-highlight-color);
+    }
+  }
+}
+
+.publications--compact {
+  counter-reset: publication-entry;
+  margin-top: 1.25rem;
+
+  h2.bibliography {
+    display: none;
+  }
+
+  ol.bibliography li {
+    counter-increment: publication-entry;
+    margin-bottom: 0.65rem;
+
+    > .row {
+      line-height: 1.3;
+    }
+
+    .abbr {
+      margin-bottom: 0.2rem;
+
+      abbr {
+        margin-bottom: 0.2rem;
+      }
+    }
+
+    .title {
+      position: relative;
+      margin-bottom: 0.08rem;
+      color: var(--publication-title-color);
+      line-height: 1.25;
+
+      &::before {
+        position: absolute;
+        right: 100%;
+        min-width: 1.65rem;
+        padding-right: 0.45rem;
+        color: var(--global-text-color-light);
+        content: counter(publication-entry) ".";
+        font-weight: 400;
+        text-align: right;
+      }
+
+      .publication-title-link {
+        display: inline-block;
+        margin-left: 0.35rem;
+        padding: 0.08rem 0.38rem;
+        border: 1px solid var(--global-text-color-light);
+        border-radius: 0.25rem;
+        color: var(--global-text-color);
+        font-size: 0.65rem;
+        font-weight: 600;
+        line-height: 1.2;
+        vertical-align: 0.08rem;
+
+        &:hover {
+          border-color: var(--global-theme-color);
+          text-decoration: none;
+        }
+      }
+    }
+
+    .author,
+    .periodical {
+      font-size: 0.92rem;
+      line-height: 1.3;
+    }
+
+    .links {
+      margin-top: 0.15rem;
+
+      a.btn {
+        margin-top: 0.2rem;
+        padding: 0.18rem 0.65rem;
+        font-size: 0.72rem;
+      }
+    }
+  }
+}
+
+.publications-header-row {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+  justify-content: space-between;
+
+  .post-title {
+    margin-bottom: 0;
+  }
+
+  .bibsearch-form-input {
+    width: 50%;
+    max-width: none;
+    margin: 0;
+  }
+}
+
+@media (max-width: 575px) {
+  .publications-header-row {
+    flex-wrap: wrap;
+    gap: 0.75rem;
+
+    .bibsearch-form-input {
+      width: 100%;
     }
   }
 }

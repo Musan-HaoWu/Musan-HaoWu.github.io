@@ -3,18 +3,20 @@ layout: default
 ---
 <div class="post{% if page.custom_home %} about-page{% endif %}">
   <header class="post-header">
-    <h1 class="post-title">
-      {% if page.custom_home %}
+    {% if page.custom_home %}<div class="about-hero-row">{% endif %}
+      <h1 class="post-title">
+        {% if page.custom_home %}
         <span class="about-display-name">{{ page.title }}</span>
         {% if page.english_name %}<span class="about-english-name">({{ page.english_name }})</span>{% endif %}
-      {% elsif site.title == 'blank' %}
-        <span class="font-weight-bold">{{ site.first_name }}</span> {{ site.middle_name }}
-        {{ site.last_name }}
-      {% else %}
-        {{ site.title }}
-      {% endif %}
-    </h1>
-    <p class="desc">{{ page.subtitle }}</p>
+        {% elsif site.title == 'blank' %}
+          <span class="font-weight-bold">{{ site.first_name }}</span> {{ site.middle_name }}
+          {{ site.last_name }}
+        {% else %}
+          {{ site.title }}
+        {% endif %}
+      </h1>
+      <p class="desc{% if page.custom_home %} about-motto{% endif %}">{{ page.subtitle }}</p>
+    {% if page.custom_home %}</div>{% endif %}
   </header>
 
   <article>
