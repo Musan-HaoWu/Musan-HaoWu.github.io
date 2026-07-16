@@ -24,7 +24,7 @@ announcements:
 # Link to your social media connections, too. This theme is set up to use [Font Awesome icons](https://fontawesome.com/) and [Academicons](https://jpswalsh.github.io/# academicons/), like the ones below. Add your Facebook, Twitter, LinkedIn, Google Scholar, or just disable all of them. 
 ---
 
-My name is Hao Wu. You can call me Hao <span class="about-pronunciation" tabindex="0" title="This makes &quot;How are you&quot; a little bit ambiguous to me." data-tooltip="This makes &quot;How are you&quot; a little bit ambiguous to me.">(pronounced as "how")</span> or by my English name Musan (pronounced /ˈmuːsɛn/). Please note that my Chinese name is kind of common, so be careful to distinguish.
+My name is Hao Wu. You can call me Hao (pronounced as "how") or by my English name Musan (pronounced /ˈmuːsɛn/). Please note that my Chinese name is kind of common, so be careful to distinguish.
 
 I am pleased to announce that I will join the <strong>Institute of Science and Technology Austria (ISTA)</strong> as a postdoctoral researcher in October 2026, working with [Prof. Thomas A. Henzinger](https://pub.ista.ac.at/~tah/).
 I obtained my PhD degree from the Institute of Software, Chinese Academy of Sciences (ISCAS) & University of Chinese Academy of Sciences (UCAS), where I am fortunate to be supervised by [Prof. Naijun Zhan](https://lcs.ios.ac.cn/~znj/).
