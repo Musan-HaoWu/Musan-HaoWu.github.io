@@ -26,7 +26,7 @@ announcements:
 
 My name is Hao Wu. You can call me Hao (pronounced as "how") or by my English name Musan (pronounced /ˈmuːsɛn/). Please note that my Chinese name is kind of common, so be careful to distinguish.
 
-I am pleased to announce that I will join the <strong>Institute of Science and Technology Austria (ISTA)</strong> as a postdoctoral researcher in October 2026, working with [Prof. Thomas A. Henzinger](https://pub.ista.ac.at/~tah/).
+I am a postdoctoral researcher at <strong>Institute of Science and Technology Austria (ISTA)</strong>, in [Prof. Thomas A. Henzinger](https://pub.ista.ac.at/~tah/)'s group.
 I obtained my PhD degree from the Institute of Software, Chinese Academy of Sciences (ISCAS) & University of Chinese Academy of Sciences (UCAS), where I am fortunate to be supervised by [Prof. Naijun Zhan](https://lcs.ios.ac.cn/~znj/).
 I completed my undergraduate studies in computer science also at UCAS.
 
