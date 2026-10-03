@@ -1,29 +1,38 @@
 {
   "basics": {
-    "name": "Musan Hao Wu",
-    "label": "PhD Student at ISCAS",
+    "name": "Hao Wu",
+    "label": "Postdoctoral Researcher at IST Austria",
     "image": "",
-    "email": "wuhao@ios.ac.cn",
+    "email": "hao.wu@ista.ac.at",
     "web": "https://musan-haowu.github.io/",
     "location": {
-      "address": "4# South Fourth Street, Zhong Guan Cun",
-      "postalCode": "100190",
-      "city": "Beijing",
-      "countryCode": "P.R. China"
+      "address": "Am Campus 1",
+      "postalCode": "3400",
+      "city": "Klosterneuburg",
+      "countryCode": "Austria"
     }
   },
   "education": [
     {
-      "institution": "Institute of Software, University of Chinese Academy of Sciences",
+      "institution": "Institute of Science and Technology Austria (ISTA)",
+      "location": "Klosterneuburg, Austria",
+      "area": "Theoretical Computer Science",
+      "studyType": "Postdoctoral Researcher",
+      "supervisor": "Thomas Henzinger",
+      "startDate": "2026-10-1",
+      "endDate": "2028-9-30"
+    },
+    {
+      "institution": "Institute of Software, University of Chinese Academy of Sciences (ISCAS)",
       "location": "Beijing, China",
-      "area": "Computer Science",
-      "studyType": "PhD",
+      "area": "Formal Methods",
+      "studyType": "Ph.D.",
       "supervisor": "Naijun Zhan",
       "startDate": "2020-9-1",
       "endDate": "2026-6-30"
     },
     {
-      "institution": "University of Chinese Academy of Sciences",
+      "institution": "University of Chinese Academy of Sciences (UCAS)",
       "location": "Beijing, China",
       "area": "Computer Science",
       "studyType": "Bachelor",

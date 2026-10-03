@@ -34,7 +34,7 @@ I am interested in a wide range of topics in <strong>Theoretical Computer Scienc
 - **Formal Methods**. I study how to combine symbolic computation, numerical optimization, and learning techniques in verification and synthesis, with the goal to advance extensible and scalable formal reasoning methodologies. I investigate a diverse range of infinite-state systems exhibiting various computational behaviors, including discrete-time programs, continuous-time and hybrid systems, stochastic systems, control systems, and communication protocols.
 - **Complexity and Computability**. I study logic, arithmetic, automata, and algorithms, with the aim of deepening our understanding of the complexity and computability issues. Recently I focus on nonlinear arithmetic reasoning and related problems.
 
-Feel free to contact me at *musan.haowu(at)gmail.com* or *wuhao(at)ios.ac.cn*.
+Feel free to contact me at *musan.haowu(at)gmail.com* or *hao.wu(at)ista.ac.at*.
 
 <!--a href="mailto:musan.haowu@gmail.com">contact me at musan.haowu@gmail.com</a>-->
 
@@ -42,9 +42,8 @@ Feel free to contact me at *musan.haowu(at)gmail.com* or *wuhao(at)ios.ac.cn*.
   <a href="https://scholar.google.com/citations?user=Bmr4jAIAAAAJ&amp;hl=en"><i class="ai ai-google-scholar" aria-hidden="true"></i>Google Scholar</a>
   <a href="https://dblp.uni-trier.de/pid/72/4250-85.html"><i class="ai ai-dblp" aria-hidden="true"></i>DBLP</a>
   <a href="https://orcid.org/0000-0001-9368-4744"><i class="ai ai-orcid" aria-hidden="true"></i>ORCID</a>
-  <a href="https://github.com/Musan-HaoWu"><i class="ti ti-brand-github" aria-hidden="true"></i>GitHub</a>
   <a href="{{ '/onlyfans/' | relative_url }}"><i class="ti ti-brand-onlyfans" aria-hidden="true"></i>OnlyFans</a>
-  <a href="https://www.xiaohongshu.com/user/profile/6129daae0000000001001dfd"><i class="ti ti-book" aria-hidden="true"></i>小红书</a>
+  <a href="https://github.com/Musan-HaoWu"><i class="ti ti-brand-github" aria-hidden="true"></i>GitHub</a>
 </div>
 
 <!-- If you are interested in my work, please feel free to contact. -->

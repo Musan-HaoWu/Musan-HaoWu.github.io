@@ -241,6 +241,7 @@ Run the test yourself: [Google Lighthouse PageSpeed Insights](https://pagespeed.
   - [Table Of Contents](#table-of-contents)
   - [Getting started](#getting-started)
   - [Installing and Deploying](#installing-and-deploying)
+  - [Local preview](#local-preview)
   - [Customizing](#customizing)
   - [Features](#features)
     - [Light/Dark Mode](#lightdark-mode)
@@ -274,6 +275,28 @@ Want to learn more about Jekyll? Check out [this tutorial](https://www.taniarasc
 ## Installing and Deploying
 
 For installation and deployment details please refer to [INSTALL.md](INSTALL.md).
+
+## Local preview
+
+To preview the site locally with live reload (edits appear in the browser after a few seconds):
+
+1. Install and start [Docker Desktop](https://docs.docker.com/get-docker/).
+2. From the repository root, run:
+
+```bash
+docker compose pull
+docker compose up
+```
+
+3. Open [http://localhost:8080](http://localhost:8080) in your browser (not port `4000`).
+
+Keep the terminal session (and Docker Desktop) running while you edit. After you save a file, Jekyll rebuilds and LiveReload refreshes the page in about **5–10 seconds**. Press `Ctrl+C` in the terminal to stop the preview.
+
+Optional smaller image:
+
+```bash
+docker compose -f docker-compose-slim.yml up
+```
 
 ## Customizing
 
