@@ -340,7 +340,8 @@ ul.task-list input[type="checkbox"] {
   }
 }
 
-.about-pronunciation {
+.about-pronunciation,
+.venue-acronym {
   position: relative;
   border-bottom: 1px dotted var(--global-text-color-light);
   cursor: help;
@@ -1090,9 +1091,118 @@ footer.sticky-bottom {
   }
 }
 
+.publications-icon-legend {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.65rem 1.25rem;
+  margin: -0.35rem 0 1.1rem;
+  color: var(--global-text-color-light);
+  font-size: 0.82rem;
+  line-height: 1.4;
+
+  &__item {
+    display: inline-flex;
+    gap: 0.35rem;
+    align-items: center;
+  }
+
+  &__icon {
+    margin-left: 0;
+    cursor: default;
+    pointer-events: none;
+  }
+
+  .publication-title-link,
+  .publication-title-tag {
+    margin-left: 0;
+  }
+}
+
+.publications-icon-legend,
+.publications--compact ol.bibliography li {
+  .publication-title-link {
+    display: inline-block;
+    margin-left: 0.35rem;
+    padding: 0.08rem 0.38rem;
+    border: 1px solid var(--global-text-color-light);
+    border-radius: 0.25rem;
+    color: var(--global-text-color);
+    font-size: 0.65rem;
+    font-weight: 600;
+    line-height: 1.2;
+    vertical-align: 0.12rem;
+
+    &:hover {
+      border-color: var(--global-theme-color);
+      color: var(--global-theme-color);
+      text-decoration: none;
+    }
+
+    &--icon {
+      margin-left: 0;
+      padding: 0.2rem 0.42rem;
+      font-size: 0.82rem;
+      line-height: 1;
+
+      .fa-file-pdf {
+        color: #c0392b;
+      }
+    }
+  }
+
+  .publication-title-link--slides {
+    .fa-display {
+      color: #1a5f8a;
+    }
+
+    &:hover .fa-display {
+      color: #0d4a6f;
+    }
+  }
+
+  .publication-title-tag {
+    cursor: default;
+
+    &--lang {
+      border-color: #c17f59;
+      color: #9a4f2a;
+    }
+
+    &--lang-char {
+      min-width: 1.55rem;
+      padding: 0.16rem 0.34rem;
+      font-family: var(--global-font-family, inherit);
+      font-size: 0.74rem;
+      font-weight: 700;
+      line-height: 1;
+      text-align: center;
+    }
+  }
+}
+
+html[data-theme='dark'] {
+  .publications-icon-legend,
+  .publications--compact ol.bibliography li {
+    .publication-title-tag--lang {
+      border-color: #d4a574;
+      color: #e8c4a0;
+    }
+
+    .publication-title-link--slides {
+      .fa-display {
+        color: #9fd4f4;
+      }
+
+      &:hover .fa-display {
+        color: #c8e8ff;
+      }
+    }
+  }
+}
+
 .publications--compact {
   counter-reset: publication-entry;
-  margin-top: 1.25rem;
+  margin-top: 0.35rem;
 
   h2.bibliography {
     display: none;
@@ -1114,6 +1224,30 @@ footer.sticky-bottom {
       }
     }
 
+    .publication-entry-top {
+      display: flex;
+      gap: 0.85rem;
+      align-items: flex-start;
+      justify-content: space-between;
+    }
+
+    .publication-entry-body {
+      flex: 1 1 auto;
+      min-width: 0;
+      max-width: min(46rem, calc(100% - 5.75rem));
+    }
+
+    .publication-entry-aside {
+      display: flex;
+      flex: 0 0 auto;
+      flex-wrap: nowrap;
+      gap: 0.32rem;
+      align-items: center;
+      justify-content: flex-end;
+      min-width: 4.75rem;
+      padding-top: 0.05rem;
+    }
+
     .title {
       position: relative;
       margin-bottom: 0.08rem;
@@ -1130,28 +1264,17 @@ footer.sticky-bottom {
         font-weight: 400;
         text-align: right;
       }
-
-      .publication-title-link {
-        display: inline-block;
-        margin-left: 0.35rem;
-        padding: 0.08rem 0.38rem;
-        border: 1px solid var(--global-text-color-light);
-        border-radius: 0.25rem;
-        color: var(--global-text-color);
-        font-size: 0.65rem;
-        font-weight: 600;
-        line-height: 1.2;
-        vertical-align: 0.08rem;
-
-        &:hover {
-          border-color: var(--global-theme-color);
-          text-decoration: none;
-        }
-      }
     }
 
     .author,
     .periodical {
+      font-size: 0.92rem;
+      line-height: 1.3;
+    }
+
+    .publication-keywords {
+      margin-top: 0.32rem;
+      color: var(--global-text-color-light);
       font-size: 0.92rem;
       line-height: 1.3;
     }
@@ -1164,6 +1287,28 @@ footer.sticky-bottom {
         padding: 0.18rem 0.65rem;
         font-size: 0.72rem;
       }
+    }
+  }
+
+}
+
+@media (max-width: 575px) {
+  .publications--compact ol.bibliography li {
+    .publication-entry-top {
+      flex-wrap: wrap;
+      gap: 0.45rem;
+    }
+
+    .publication-entry-body {
+      max-width: 100%;
+    }
+
+    .publication-entry-aside {
+      width: 100%;
+      min-width: 0;
+      justify-content: flex-start;
+      padding-top: 0;
+      padding-left: 1.65rem;
     }
   }
 }

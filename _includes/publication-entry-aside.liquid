@@ -1,0 +1,54 @@
+{% comment %}
+  PDF / Slides / language tags for compact full-width publication entries (right column).
+{% endcomment %}
+{% assign show_aside = false %}
+{% if page.publication_full_width %}
+  {% if entry.pdf or entry.slides or entry.github or entry.code or entry.language_tag %}
+    {% assign show_aside = true %}
+  {% endif %}
+{% endif %}
+
+{% if show_aside %}
+  <div class="publication-entry-aside" aria-label="Publication links">
+    {% if entry.pdf %}
+      {% if entry.pdf contains '://' %}
+        <a href="{{ entry.pdf }}" class="publication-title-link publication-title-link--icon" title="PDF" aria-label="PDF">
+          <i class="fa-solid fa-file-pdf fa-sm" aria-hidden="true"></i>
+        </a>
+      {% else %}
+        <a href="{{ entry.pdf | prepend: '/assets/pdf/' | relative_url }}" class="publication-title-link publication-title-link--icon" title="PDF" aria-label="PDF">
+          <i class="fa-solid fa-file-pdf fa-sm" aria-hidden="true"></i>
+        </a>
+      {% endif %}
+    {% endif %}
+    {% if entry.slides %}
+      {% if entry.slides contains '://' %}
+        <a href="{{ entry.slides }}" class="publication-title-link publication-title-link--icon publication-title-link--slides" title="Slides (presentation)" aria-label="Slides">
+          <i class="fa-solid fa-display fa-sm" aria-hidden="true"></i>
+        </a>
+      {% else %}
+        <a href="{{ entry.slides | prepend: '/assets/pdf/' | relative_url }}" class="publication-title-link publication-title-link--icon publication-title-link--slides" title="Slides (presentation)" aria-label="Slides">
+          <i class="fa-solid fa-display fa-sm" aria-hidden="true"></i>
+        </a>
+      {% endif %}
+    {% endif %}
+    {% if entry.github %}
+      <a href="{{ entry.github }}" class="publication-title-link publication-title-link--icon" title="GitHub" aria-label="GitHub">
+        <i class="fa-brands fa-github fa-sm" aria-hidden="true"></i>
+      </a>
+    {% elsif entry.code %}
+      <a href="{{ entry.code }}" class="publication-title-link publication-title-link--icon" title="Code" aria-label="Code">
+        <i class="fa-solid fa-code fa-sm" aria-hidden="true"></i>
+      </a>
+    {% endif %}
+    {% if entry.language_tag %}
+      <span
+        class="publication-title-link publication-title-link--icon publication-title-tag publication-title-tag--lang publication-title-tag--lang-char"
+        title="{{ entry.language_tag }}"
+        aria-label="{{ entry.language_tag }}"
+      >
+        中
+      </span>
+    {% endif %}
+  </div>
+{% endif %}

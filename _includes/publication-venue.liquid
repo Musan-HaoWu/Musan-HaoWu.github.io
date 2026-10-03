@@ -1,0 +1,23 @@
+{% comment %}
+  Venue line for publications. Set venue_short (and optional venue_suffix) in the .bib entry;
+  booktitle/journal holds the full name used as the hover tooltip.
+{% endcomment %}
+{% if include.venue_short %}
+  <em>
+    <span
+      class="venue-acronym"
+      tabindex="0"
+      data-tooltip="{{ include.venue_full | strip_html | strip | escape }}"
+    >
+      {{- include.venue_short -}}
+    </span>
+    {%- assign suffix_display = include.venue_suffix | strip -%}
+    {%- if suffix_display != '' -%}
+      {{ suffix_display | prepend: ' ' }}
+    {%- endif -%}
+  </em>
+{% elsif include.proceedings %}
+  <em>In {{ include.venue }}</em>
+{% else %}
+  <em>{{ include.venue }}</em>
+{% endif %}
