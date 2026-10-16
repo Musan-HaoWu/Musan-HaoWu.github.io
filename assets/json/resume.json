@@ -12,16 +12,17 @@
       "countryCode": "Austria"
     }
   },
-  "education": [
+  "work": [
     {
-      "institution": "Institute of Science and Technology Austria (ISTA)",
+      "name": "Institute of Science and Technology Austria (ISTA)",
       "location": "Klosterneuburg, Austria",
-      "area": "Theoretical Computer Science",
-      "studyType": "Postdoctoral Researcher",
-      "supervisor": "Thomas Henzinger",
+      "position": "Postdoctoral Researcher",
+      "summary": "Theoretical Computer Science (group of Thomas Henzinger)",
       "startDate": "2026-10-1",
       "endDate": "2028-9-30"
-    },
+    }
+  ],
+  "education": [
     {
       "institution": "Institute of Software, University of Chinese Academy of Sciences (ISCAS)",
       "location": "Beijing, China",
