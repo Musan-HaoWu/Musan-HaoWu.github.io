@@ -1112,8 +1112,7 @@ footer.sticky-bottom {
     pointer-events: none;
   }
 
-  .publication-title-link,
-  .publication-title-tag {
+  .publication-title-link {
     margin-left: 0;
   }
 }
@@ -1159,35 +1158,11 @@ footer.sticky-bottom {
       color: #0d4a6f;
     }
   }
-
-  .publication-title-tag {
-    cursor: default;
-
-    &--lang {
-      border-color: #c17f59;
-      color: #9a4f2a;
-    }
-
-    &--lang-char {
-      min-width: 1.55rem;
-      padding: 0.16rem 0.34rem;
-      font-family: var(--global-font-family, inherit);
-      font-size: 0.74rem;
-      font-weight: 700;
-      line-height: 1;
-      text-align: center;
-    }
-  }
 }
 
 html[data-theme='dark'] {
   .publications-icon-legend,
   .publications--compact ol.bibliography li {
-    .publication-title-tag--lang {
-      border-color: #d4a574;
-      color: #e8c4a0;
-    }
-
     .publication-title-link--slides {
       .fa-display {
         color: #9fd4f4;
