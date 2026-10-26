@@ -33,6 +33,14 @@ publication_filter_in_header: true
 
 <div class="publications publications--compact">
 
-{% bibliography %}
+{% bibliography --query @*[language_tag!=Chinese] %}
+
+</div>
+
+<h2 class="publications-section-heading">Chinese publications</h2>
+
+<div class="publications publications--compact">
+
+{% bibliography --query @*[language_tag=Chinese] %}
 
 </div>

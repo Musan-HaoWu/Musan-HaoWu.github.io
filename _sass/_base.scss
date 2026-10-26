@@ -1200,6 +1200,12 @@ html[data-theme='dark'] {
   }
 }
 
+.publications-section-heading {
+  margin-top: 2rem;
+  margin-bottom: 0.5rem;
+  font-size: 1.35rem;
+}
+
 .publications--compact {
   counter-reset: publication-entry;
   margin-top: 0.35rem;
