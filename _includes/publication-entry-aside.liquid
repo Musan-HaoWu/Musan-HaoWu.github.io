@@ -1,9 +1,9 @@
 {% comment %}
-  PDF / Slides / language tags for compact full-width publication entries (right column).
+  PDF / Slides / code links for compact full-width publication entries (right column).
 {% endcomment %}
 {% assign show_aside = false %}
 {% if page.publication_full_width %}
-  {% if entry.pdf or entry.slides or entry.github or entry.code or entry.language_tag %}
+  {% if entry.pdf or entry.slides or entry.github or entry.code %}
     {% assign show_aside = true %}
   {% endif %}
 {% endif %}
@@ -40,15 +40,6 @@
       <a href="{{ entry.code }}" class="publication-title-link publication-title-link--icon" title="Code" aria-label="Code">
         <i class="fa-solid fa-code fa-sm" aria-hidden="true"></i>
       </a>
-    {% endif %}
-    {% if entry.language_tag %}
-      <span
-        class="publication-title-link publication-title-link--icon publication-title-tag publication-title-tag--lang publication-title-tag--lang-char"
-        title="{{ entry.language_tag }}"
-        aria-label="{{ entry.language_tag }}"
-      >
-        中
-      </span>
     {% endif %}
   </div>
 {% endif %}
